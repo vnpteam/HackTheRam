@@ -5,232 +5,115 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/stages.css">
     <link rel="stylesheet" href="css/foundation.css">
   </head>
   <body>
-    <div class="grid-container" id="navbar">
-        <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
-            <div class="top-bar">
-              <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                  <li class="menu-text">Hack the ram</li>
-                  <li>
-                    <a href="#">Stages</a>                  
-                  </li>
-                  <li><a href="portfolio.html">Memory Portfolio</a></li>
-                  <li><a href="portfolio.html">Treatment</a></li>
-                </ul>
-              </div>
-              <div class="top-bar-right">
-                <ul class="menu">
-                  <li><input type="search" placeholder="Username"></li>
-                  <input type="search" placeholder="Password"></li>
-                  <li><button type="button" class="button">Login</button></li>
-                </ul>
-              </div>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="top-bar" id="navbar">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Hack the ram</li>
+                <li>
+                  <a href="index.html">Home</a>                  
+                </li>
+                <li><a href="portfolio.html">Memory Portfolio</a></li>
+                <li><a href="stages.html">Stages</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><input type="search" placeholder="Username"></li>
+                <input type="search" placeholder="Password"></li>
+                <li><button type="button" class="button">Login</button></li>
+              </ul>
             </div>
           </div>
-         </div>
-         </div> 
-         <div class="container">
-          <header class="header">
-            <h1 id="title" class="text-center">Diagnose your dementia stage</h1>
-            <p id="description" class="description text-center">
-              Find which stage of dementia you might have
-            </p>
-          </header>
-          <form id="survey-form">
-            <div class="form-group">
-              <label id="number-label" for="number"
-                >Age<span class="clue"></span></label>
-              <input
-                type="number"
-                name="age"
-                id="number"
-                min="10"
-                max="99"
-                class="form-control"
-                placeholder="Age"
-              />
-            </div>
-            <div class="form-group">
-              <p>Which option best describes your current role?</p>
-              <select id="dropdown" name="role" class="form-control" required>
-                <option disabled selected value>Select current role</option>
-                <option value="student">1</option>
-                <option value="job">2</option>
-                <option value="learner">3</option>
-                <option value="preferNo">4</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-        
-            <div class="form-group">
-              <p>Would you recommend freeCodeCamp to a friend?</p>
-              <label>
-                <input
-                  name="user-recommend"
-                  value="definitely"
-                  type="radio"
-                  class="input-radio"
-                  checked
-                />Definitely</label
-              >
-              <label>
-                <input
-                  name="user-recommend"
-                  value="maybe"
-                  type="radio"
-                  class="input-radio"
-                />Maybe</label
-              >
-        
-              <label
-                ><input
-                  name="user-recommend"
-                  value="not-sure"
-                  type="radio"
-                  class="input-radio"
-                />Not sure</label
-              >
-            </div>
-        
-            <div class="form-group">
-              <p>
-                What is your favorite feature of freeCodeCamp?
-              </p>
-              <select id="most-like" name="mostLike" class="form-control" required>
-                <option disabled selected value>Select an option</option>
-                <option value="challenges">Challenges</option>
-                <option value="projects">Projects</option>
-                <option value="community">Community</option>
-                <option value="openSource">Open Source</option>
-              </select>
-            </div>
-        
-            <div class="form-group">
-              <p>
-                What would you like to see improved?
-                <span class="clue">(Check all that apply)</span>
-              </p>
-        
-              <label
-                ><input
-                  name="prefer"
-                  value="front-end-projects"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Front-end Projects</label
-              >
-              <label>
-                <input
-                  name="prefer"
-                  value="back-end-projects"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Back-end Projects</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="data-visualization"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Data Visualization</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="challenges"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Challenges</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="open-source-community"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Open Source Community</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="gitter-help-rooms"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Gitter help rooms</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="videos"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Videos</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="city-meetups"
-                  type="checkbox"
-                  class="input-checkbox"
-                />City Meetups</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="wiki"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Wiki</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="forum"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Forum</label
-              >
-              <label
-                ><input
-                  name="prefer"
-                  value="additional-courses"
-                  type="checkbox"
-                  class="input-checkbox"
-                />Additional Courses</label
-              >
-            </div>
-        
-            <div class="form-group">
-              <p>Any comments or suggestions?</p>
-              <textarea
-                id="comments"
-                class="input-textarea"
-                name="comment"
-                placeholder="Enter your comment here..."
-              ></textarea>
-            </div>
-        
-            <div class="form-group">
-              <button type="submit" id="submit" class="submit-button">
-                Submit
-              </button>
-            </div>
-          </form>
         </div>
-        
-         
-        <form>
-            <button class="button" text="Upload Memories" href="uploadform.html" />
+       </div>
+       </div> 
+       <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Diagnose Dementia</h1>
+          <p id="description" class="description text-center">
+            1 - This does not happen to me | 5 - This always happens to me
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue"></span></label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>I am very forgetful.</p>
+            <select id="dropdown" name="forgetfullness" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <p>I lose stuff frequently.</p>
+            <select id="dropdown" name="forgetfullness" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <p>I have difficulty speaking.</p>
+            <select id="dropdown" name="forgetfullness" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <p>I find myself wandering around frequently.</p>
+            <select id="dropdown" name="forgetfullness" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <p>I get lost.</p>
+            <select id="dropdown" name="forgetfullness" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-group">
+          </div>
+      
+          
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
         </form>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+      </div>
+      
   </body>
 </html>
