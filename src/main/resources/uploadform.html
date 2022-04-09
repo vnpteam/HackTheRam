@@ -5,22 +5,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/stages.css">
     <link rel="stylesheet" href="css/foundation.css">
   </head>
   <body>
-    <div class="grid-container" id="navbar">
+    <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="large-12 cell">
-            <div class="top-bar">
+            <div class="top-bar" id="navbar">
               <div class="top-bar-left">
                 <ul class="dropdown menu" data-dropdown-menu>
                   <li class="menu-text">Hack the ram</li>
                   <li>
-                    <a href="#">Stages</a>                  
+                    <a href="index.html">Home</a>                  
                   </li>
                   <li><a href="portfolio.html">Memory Portfolio</a></li>
-                  <li><a href="portfolio.html">Treatment</a></li>
+                  <li><a href="stages.html">Stages</a></li>
                 </ul>
               </div>
               <div class="top-bar-right">
@@ -34,6 +34,25 @@
           </div>
          </div>
          </div> 
+         <div class="container">
+          <header class="header">
+            <h1 id="title" class="text-center">Upload Memories</h1>
+            <p id="description" class="description text-center">
+              Upload memories here
+            </p>
+          </header>
+          <form id="survey-form">
+            <div class="form-group">
+                
+  <input type="file" id="image_input">
+
+  <div id="display_image"></div>
+
+
+            </div>
+            <div class="form-group">
+            </div>
+        
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
