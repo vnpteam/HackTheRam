@@ -7,14 +7,13 @@
     transform: translate(-375px)
 }
 
-hr {
-}
+
 
 body div {
     font-size: 20px;
 }
 
-div {
+html {
     font-family: 'Oxygen', sans-serif;
 }
 
